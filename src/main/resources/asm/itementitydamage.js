@@ -29,7 +29,7 @@ function initializeCoreMod() {
 
 
                 newInstructions.add(ASM.buildMethodCall(
-                    "com/tfar/additionalevents/event/Hooks",
+                    "com/tfar/additionalevents/Hooks",
                     "onEntityItemDamage",
                     "(Lnet/minecraft/entity/item/ItemEntity;Lnet/minecraft/util/DamageSource;F)F",
                     ASM.MethodType.STATIC

@@ -29,7 +29,7 @@ function initializeCoreMod() {
                 newInstructions.add(new VarInsnNode(Opcodes.ALOAD, 3));
 
                 newInstructions.add(ASM.buildMethodCall(
-                    "com/tfar/additionalevents/event/Hooks",
+                    "com/tfar/additionalevents/Hooks",
                     "fireCollisionShapeEvent",
                     "(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/shapes/ISelectionContext;)Lnet/minecraft/util/math/shapes/VoxelShape;",
                     ASM.MethodType.STATIC

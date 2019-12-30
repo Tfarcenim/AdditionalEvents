@@ -27,7 +27,7 @@ function initializeCoreMod() {
                 newInstructions.add(new VarInsnNode(Opcodes.ALOAD, 2));
 
                 newInstructions.add(ASM.buildMethodCall(
-                    "com/tfar/additionalevents/event/Hooks",
+                    "com/tfar/additionalevents/Hooks",
                     "fireBlockGenerateLootEvent",
                     "(Lnet/minecraft/world/storage/loot/LootTable;Lnet/minecraft/world/storage/loot/LootContext$Builder;)Ljava/util/List;",
                     ASM.MethodType.STATIC
