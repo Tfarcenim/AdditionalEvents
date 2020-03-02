@@ -1,6 +1,0 @@
-{
-  "event1": "asm/generateloot.js",
-  "event2": "asm/droploot.js",
-  "event3": "asm/collisionshape.js",
-  "event4": "asm/itementitydamage.js"
-}

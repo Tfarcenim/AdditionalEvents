@@ -13,10 +13,10 @@ import net.minecraftforge.eventbus.api.Cancelable;
 import net.minecraftforge.eventbus.api.Event;
 
 /**
- * This event is fired during {@link World#collide(AxisAlignedBB)}
+ * This event is fired during {@link BlockState#getCollisionShape(IBlockReader, BlockPos)}
  * and before returning the list in {@link World#getCollisionBoxes(Entity, AxisAlignedBB)}<br>
  * <br>
- * {@link #entity} contains the entity passed in the {@link World#getCollisionBoxes(Entity, AxisAlignedBB)}. <b>Can be null.</b> Calls from {@link World#collidesWithAnyBlock(AxisAlignedBB)} will be null.<br>
+ * {@link #context} contains the context passed in the {@link World#getCollisionBoxes(Entity, AxisAlignedBB)}. <b>Can be null.</b> Calls from {@link World#collidesWithAnyBlock(AxisAlignedBB)} will be null.<br>
  * {@link #context} contains the SelectionContext passed in the method.<br>
  * {@link #shape} contains the current collision shape intersecting. The shape can be modified.<br>
  * <br>

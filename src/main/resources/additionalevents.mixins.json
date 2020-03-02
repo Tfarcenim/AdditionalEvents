@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.tfar.additionalevents.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "additionalevents.refmap.json",
+  "mixins": [
+    "MixinBlock",
+    "MixinBlockState",
+    "MixinItemEntity"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
